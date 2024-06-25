@@ -1,0 +1,35 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools",
+]
+
+[tool.setuptools]
+packages = [
+    "losan_lofav",
+]
+
+[project]
+name = "losan_lofav"
+version = "1.0.0"
+authors = [
+    {name = "Jungtaek Kim", email = "jungtaek.kim.mail@gmail.com"},
+]
+description = "Noise-Adaptive Confidence Sets for Linear Bandits and Application to Bayesian Optimization"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "scipy",
+    "bayeso-benchmarks",
+    "nats_bench",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
