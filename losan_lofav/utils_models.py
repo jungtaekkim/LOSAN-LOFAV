@@ -1,10 +1,10 @@
 import numpy as np
 
-import linear_models
-import losan
-import lofav
-import utils_regression
-import utils_optimization
+from losan_lofav import linear_models
+from losan_lofav import losan
+from losan_lofav import lofav
+from losan_lofav import utils_regression
+from losan_lofav import utils_optimization
 
 
 def run_losan(X_transformed, by_noisy, arms, arms_transformed, Sigmas_inverse, bw, thetas_hat, terms_second, S, sigma_zero, lambda_, delta):

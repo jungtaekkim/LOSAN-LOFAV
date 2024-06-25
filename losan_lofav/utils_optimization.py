@@ -1,7 +1,7 @@
 import numpy as np
 
-import linear_models
-import utils_regression
+from losan_lofav import linear_models
+from losan_lofav import utils_regression
 
 
 def get_arms(bounds, num_arms, random_state):

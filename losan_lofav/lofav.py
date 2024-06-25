@@ -2,8 +2,8 @@ import numpy as np
 import numpy.linalg as npla
 import scipy.spatial.distance as scisd
 
-import linear_models
-import utils_regression
+from losan_lofav import linear_models
+from losan_lofav import utils_regression
 
 
 def calculate_L(T, dim):
