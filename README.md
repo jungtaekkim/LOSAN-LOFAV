@@ -15,7 +15,7 @@ pip install .
 
 ```
 @inproceedings{JunKS2024icml,
-    title={Noise-Adaptive Confidence Sets for Linear Bandits and Application to Bayesian Optimization},
+    title={Noise-Adaptive Confidence Sets for Linear Bandits and Application to {Bayesian} Optimization},
     author={Jun, Kwang-Sung and Kim, Jungtaek},
     booktitle={Proceedings of the International Conference on Machine Learning (ICML)},
     year={2024},
