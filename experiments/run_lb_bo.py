@@ -7,7 +7,7 @@ from losan_lofav import utils_models
 from losan_lofav import utils_optimization
 from losan_lofav import utils_random_fourier_features
 
-import class_natsbench
+import natsbench
 
 
 path_results = '../results_bo'
@@ -49,7 +49,7 @@ if __name__ == '__main__':
         'natsbench_cifar100',
         'natsbench_ImageNet16-120',
     ]:
-        obj_problem = class_natsbench.NATSBench(list_str_problem[1])
+        obj_problem = natsbench.NATSBench(list_str_problem[1])
     else:
         if len(list_str_problem) == 1:
             obj_problem = bb_utils.get_benchmark(list_str_problem[0])
