@@ -7,8 +7,37 @@ It is an official repository of "[Noise-Adaptive Confidence Sets for Linear Band
 
 ## Installation
 
+You can install `losan_lofav` using the following command.
+Command it in the root directory.
+
 ```shell
 pip install .
+```
+
+## Experiments
+
+You can run experiments in the `experiments` directory.
+Use the following commands to conduct experiments.
+
+- Synthetic functions
+
+```shell
+python run_lb_synthetic.py --model losan --noise gaussian --problem 32 --num_iter 100 --seed 42 --num_arms 128 --norm 1.0 --sigma_bar 0.01 --save_results
+python run_lb_synthetic.py --model lofav --noise rademacher --problem 32 --num_iter 100 --seed 42 --num_arms 128 --norm 1.0 --sigma_bar 0.01 --save_results
+```
+
+- Benchmark functions
+
+```shell
+python run_lb_bo.py --model losan --noise gaussian --problem branin --num_iter 100 --seed 42 --num_arms 512 --norm 1.0 --sigma_bar 0.01 --save_results
+python run_lb_bo.py --model lofav --noise rademacher --problem branin --num_iter 100 --seed 42 --num_arms 512 --norm 1.0 --sigma_bar 0.01 --save_results
+```
+
+- NATS-Bench
+
+```shell
+python run_lb_bo.py --model losan --noise gaussian --problem natsbench_ImageNet16-120 --num_iter 100 --seed 42 --num_arms 512 --norm 1.0 --sigma_bar 0.01 --save_results
+python run_lb_bo.py --model lofav --noise rademacher --problem natsbench_ImageNet16-120 --num_iter 100 --seed 42 --num_arms 512 --norm 1.0 --sigma_bar 0.01 --save_results
 ```
 
 ## Citation
