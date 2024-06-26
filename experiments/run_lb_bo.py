@@ -120,8 +120,6 @@ if __name__ == '__main__':
     assert X.shape[1] == bx_best.shape[0]
     assert X_transformed.shape[1] == bx_transformed_best.shape[0]
     print(X.shape, X_transformed.shape, by_noisy.shape, by_noiseless.shape)
-    print(np.sum(y_best - by_noiseless))
-    print(y_best - np.max(by_noiseless))
 
     dict_all = {
         'str_model': str_model,

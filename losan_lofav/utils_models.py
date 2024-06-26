@@ -183,9 +183,6 @@ def run_lofav(X_transformed, by_noisy, arms, arms_transformed, Sigmas_inverse, t
     assert vals.shape[0] == arms_transformed.shape[0]
     ind_max = np.argmax(vals)
 
-    if np.min(vals_first, axis=0)[ind_max] < np.min(vals_second, axis=0)[ind_max]:
-        print('the first is selected.', flush=True)
-
     arm_selected = arms[ind_max]
     arm_transformed_selected = arms_transformed[ind_max]
 
